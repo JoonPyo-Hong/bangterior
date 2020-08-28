@@ -1,0 +1,420 @@
+/* 해당 페이지 스타일 작업 영역 */
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+body div,
+button {
+    transition: all 0.7s;
+}
+/* 맵 style */
+
+#wrap {
+    height: 100%;
+}
+
+#container {
+    padding-top: 132px;
+    height: 100%;
+}
+
+/* 지도 + 필터  */
+#left_box {
+    float: left;
+    width: 1250px;
+    height: 100%;
+    /* position: absolute; */
+    /* top: 0px;
+                left: 0px; */
+}
+
+/* 필터 박스 */
+#search_box {
+    position: absolute;
+    z-index: 10;
+    width: 450px;
+    height: 55px;
+    left: 100px;
+    top: 190px;
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+#searchbtn1 {
+    cursor: pointer;
+    background-color: #7674e2;
+    border: 1px solid #7674e2;
+    /* border: 0px solid #7674E2; */
+    width: 50px;
+    height: 53px;
+    margin-left: -4px;
+    padding-top: 1px;
+    vertical-align: middle;
+}
+#searchbtn1 img {
+    width: 20px;
+}
+#searchtext {
+    width: 280px;
+    height: 50px;
+    text-indent: 10px;
+    /* padding: 7px; */
+    font-size: 1.3em;
+    border: 1px solid#7674E2;
+    vertical-align: middle;
+}
+
+#searchbtn2 {
+    width: 105px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    margin-left: 9px;
+    text-align: center;
+    background-color: #ddd;
+    vertical-align: middle;
+}
+#searchbtn2:hover {
+    background-color: gray;
+    color: white;
+}
+#searchbtn2 img {
+    vertical-align: middle;
+    width: 22px;
+}
+
+#searchbtn2 span {
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#filter_box {
+    position: absolute;
+    left: 100px;
+    width: 450px;
+    height: 635px;
+    top: 276px;
+    background-color: white;
+    padding: 15px;
+    padding-top: 0px;
+    z-index: 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* 지도 */
+#map {
+    width: 100%;
+    height: 100%;
+    /* transform: 1s; */
+    /* z-index: 5; */
+    /* z-index: -1; */
+}
+
+#right_box {
+    float: left;
+    width: calc(100% - 1250px);
+    height: 100%;
+    position: relative;
+    /* padding: 20px; */
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+    /* position: absolute; */
+}
+
+.img text {
+    margin: 5px;
+}
+#title1 {
+    width: 100%;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: bold;
+    /* margin-bottom: 50px; */
+}
+.list {
+    margin-left: 50px;
+
+    margin-top: 50px;
+
+    float: left;
+    transition: all 0s;
+}
+.list:hover {
+    transition: all 0s;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    text-decoration: underline;
+}
+
+.text1 {
+    font-size: 1.3em;
+}
+#btn1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+    margin-left: -30px;
+    /* clear: both; */
+    /* position: relative; */
+    /* right: 30px;
+                bottom: 320px; */
+    z-index: 1;
+}
+#btn1 button {
+    padding: 15px 10px;
+    background-color: white;
+    border: 0px;
+    cursor: pointer;
+}
+#scroll {
+    width: auto;
+    height: calc(100% - 210px);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#title1 select {
+    float: right;
+    padding: 7px 12px;
+    font-size: 16px;
+    background-color: #ededed;
+    border: 1px solid #ddd;
+}
+.hot {
+    text-align: right;
+    /* border: 1px solid black; */
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(252, 196, 190);
+    padding: 3px 8px;
+    color: rgb(214, 60, 60);
+}
+/* 페이징 영역 */
+
+#paging {
+    /* width: 800px; */
+    /* margin: 0 auto; */
+    clear: both;
+    /* float: left; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 30px;
+}
+
+#paging ul {
+    display: inline-block;
+    height: 30px;
+}
+
+#paging ul li {
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    margin: 0 15px;
+    color: #666;
+    line-height: 40px;
+}
+/* 마우스 올렸을때 */
+#paging ul li:hover {
+ font-weight : bold;
+}
+
+#paging .btn {
+    font-size: 14x;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 10px;
+    border: 1px solid #888;
+    margin: 0 10px;
+}
+ 
+     ul .view_page a{ 
+    /* #paging ul li a{ */
+         
+       font-weight: bold;
+       color:#333;
+       text-decoration:underline; 
+        
+    }
+
+#paging .btn:hover {
+    transition: all 0.5s;
+    background-color: black;
+    color: white;
+}
+#hiiden {
+    position: absolute;
+}
+.list_title {
+    font-size: 1.2em;
+    color: #7674e2;
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-left: 12px;
+    /* border-bottom: 1px solid rgb(235, 235, 235); */
+}
+.list_text2 {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-left: 12px;
+}
+
+
+
+#tbl1 {
+    margin: 0px auto;
+}
+#tbl1 td {
+    width: 200px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#tbl1 td button {
+    width: 200px;
+    font-size: 1.2em;
+    /* width: 20px; */
+    height: 45px;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    border: 1px solid #ddd;
+}
+#tbl1 td button:hover {
+    cursor: pointer;
+}
+
+/*  */
+#tbl2 {
+    margin: 0px auto;
+}
+#tbl2 td {
+    width: 200px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#tbl2 td button {
+    width: 200px;
+    font-size: 1.2em;
+    /* width: 20px; */
+    height: 45px;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    border: 1px solid #ddd;
+}
+#tbl2 td button:hover {
+    cursor: pointer;
+}
+#tbl2 td button.check_btn {
+    background-color: #545655;
+    color: white;
+}
+#tbl3 td button:hover {
+    cursor: pointer;
+}
+#tbl1 td button.check_btn {
+    background-color: #545655;
+    color: white;
+}
+
+#tbl3 {
+    margin: 0px auto;
+}
+#tbl3 td {
+    width: 100px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#tbl3 td button {
+    width: 100px;
+    font-size: 1.2em;
+    /* width: 20px; */
+    height: 45px;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+#tbl3 td button.check_btn {
+    background-color: #545655;
+    color: white;
+}
+#exapmle_box {
+    text-align: center;
+   
+}
+
+/* 찬방 필터 스타일 */
+
+#filter_top {
+    width: 100%;
+    transition: all 0s;
+    text-align: center;
+	height: 300px;
+    /* padding: 10px; */
+    /* height: calc(auto + 210px); */
+    /* height:auto; */
+    /* padding: 100px; */
+    /* height: 500px; */
+    /* margin-bottom: 50px; */
+   	/* border: 1px solid black;  */
+     background-color: #eeeeee;
+}
+
+#filter_bottom {
+    /* float: left; */
+    /* padding: 10px; */
+    width: 100%;
+    height: 300px;
+    background-color: #dddfec;
+    background-image: url("../images/cart.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#filter_top,
+#filter_bottom div:hover {
+    cursor: pointer;
+}
+.imgsize {
+    width: 55px;
+    text-align: center;
+    margin: 7px 0;
+}
+#filter_bottom {
+    transition: all 0s;
+    border-top: 0px;
+}
+.drag {
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    transition: all 0s;
+    background-color: white;
+}
+.heart {
+    margin: 5px;
+}
+
+
+
+
+/* 찬방필터 끝 */

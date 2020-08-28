@@ -1,0 +1,90 @@
+/* basic */
+
+.modal {
+    display: none;  /* 기본 화면에 숨기기 */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.basic_popup , .regview_popup {
+    display: none;  /* 기본 화면에 숨기기 */
+    z-index: 1002;
+    position: absolute;
+    left:50%; top:50%;
+    margin-left: -200px;
+    margin-top: -125px;
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border:1px solid #eee;
+}
+
+.basic_popup p{
+    text-align: center;
+    margin-top: 80px;
+    color:#444;
+}
+
+.basic_popup .ok_btn {
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #7674E2;
+    color:white;
+}
+
+
+/* 확인 & 삭제 버튼 2개 팝업창 */
+.basic_popup #popup_btn_area{
+    width: 280px;
+    margin: 0 auto;
+}
+
+.basic_popup #popup_btn_area .ok_btn {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.basic_popup #popup_btn_area .cancel_btn{
+    background-color: #bbb;
+}
+
+/* 입력칸 추가 팝업창 */
+.basic_popup .password_input{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* 입력칸 팝업창 확인 버튼 위치 조절 */
+.basic_popup .pw_popup_margin {
+    margin-top: 22px;
+}
+
+
+/* 삭제 버튼 */
+.basic_popup .close_btn img{
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    right: 30px;
+    top:25px
+}
+
+
+

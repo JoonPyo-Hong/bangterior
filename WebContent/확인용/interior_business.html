@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior_besiness</title>
+    <link rel="stylesheet" type="text/css" href="../css/main_member.css">
+    <!-- 구글웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
+    <Style>
+
+        #main {
+            border: 1px solid #F0F0F6;
+            width: 1200px;
+            height: 2500px;
+            background-color: #F0F0F6;
+            margin: auto auto;
+        }
+
+
+        #filter {
+            /* border: 1px solid black; */
+            width: 1000px;
+            height: 150px;
+            margin: auto auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #sel1 , #sel2{
+            border: 0;
+            outline: none;
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            margin-right: 40px;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+
+
+        #search {
+            border-radius: 5px;
+            width: 600px;
+            display: inline-block;
+            /* margin-left: 80px; */
+            padding: 5px 5px;
+        }
+
+
+        #in_txt {
+            height: 20px;
+            width: 500px;
+            margin-right: 10px;
+            font-size: 1.2em;
+            padding: 10px;
+            border: 0px solid #999;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .fa-search {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #7674E2;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+
+        .item1 {
+            /* border: 1px solid black; */
+            width:900px;
+            height: 380px;
+            background-color: white;
+            margin: auto auto;
+            margin-bottom: 30px;
+        }
+
+        .img {
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            width: 300px;
+            float: left;
+            margin: 30px;
+        }
+
+        .name {
+            /* border: 1px solid black; */
+            width: 200px;
+            font-size: 1.5em;
+            font-weight: bold;
+            float: left;
+            margin-top: 5px;
+        }
+
+
+
+        .detail {
+            /* border: 1px solid red; */
+            width: 450px;
+            height: 80px;
+            margin-top: 60px;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            /* border: 1px solid black; */
+            width: 480px;
+            height: 300px;
+            float: left;
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+
+        .btn {
+            border: 0;
+            outline: none;
+            width: 100px;
+            height: 30px;
+            float: left;
+            margin-left: 150px;
+            margin-top: 5px;
+            cursor: pointer;
+            background-color: #2E364A;
+            color: white;
+
+        }
+
+
+        .fa-star {
+            color: #7674E2;
+        }
+
+        .review {
+            /* border: 1px solid black; */
+            color: #5B6172;
+            font-size: 0.9em;
+        } 
+
+        .review::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+        .re_img {
+            width:70px;
+            display: block;
+            border: 5px solid #999;
+            border-radius: 50px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        .re_txt {
+            /* border: 1px solid black; */
+            width: 350px;
+            height: 80px;
+            float: left;
+            margin: 10px;
+            margin-top: 20px;
+            padding: 5px;
+            font-size: 0.9em;
+        }
+
+
+        /* 페이징 영역 */
+        #paging {
+            /* width: 800px; */
+            /* margin: 0 auto; */
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
+
+        #paging ul {
+            display: inline-block;
+            height: 30px;
+        }
+
+        #paging ul li{
+            cursor: pointer;
+            float: left;
+            font-size: 18px;
+            margin: 0 15px;
+            color:#666;
+            line-height: 40px;
+        }
+
+        #paging ul li.view_page{
+            font-weight: bold;
+            color:#333;
+            text-decoration:underline;
+        }
+
+        #paging .pbtn {
+            font-size: 14x;
+            cursor: pointer;
+            display: inline-block;
+            padding:7px 10px;
+            border:1px solid #888;
+            margin: 0 10px;
+        }
+
+        #paging .pbtn:hover {
+            transition: all 0.5s;
+            background-color: black;
+            color:white;
+        }
+
+
+
+
+
+
+
+        #footer {
+            margin-top: 50px;
+        }
+    </Style>
+    
+</head>
+<body>
+
+    <!-- 전체 -->
+    <div id="wrap">
+        
+        <!-- header -->
+        <div id="header">
+            
+            <div class="logo_area">
+                <img class="logo" src="../images/logo.png">
+                <p>찬방찬방</p>
+
+                <ul id="gnb">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+
+            
+
+
+
+            <!-- nav -->
+            <div id="nav">
+                <ul>
+                    <li><a href="#">매물 조회</a></li>
+                    <li><a href="#">매물 등록</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div id="container">
+
+            <!-- 작업 영역 -->
+
+            <div id="main">
+
+                <div id="filter">
+
+                    <select id="sel1">
+                        <option value="0" selected>지역선택</option>
+                        <option value="1">서울특별시</option>
+                        <option value="2">부산광역시</option>
+                        <option value="3">대구광역시</option>
+                        <option value="4">인천광역시</option>
+                        <option value="5">광주광역시</option>
+                        <option value="6">대전광역시</option>
+                        <option value="7">강원도</option>
+                        <option value="8">경기도</option>
+                        <option value="9">경상남도</option>
+                        <option value="10">제주특별자치도</option>
+                    </select>
+
+
+                    <select id="sel2">
+                        <option value="0" selected>시공종류</option>
+                        <option value="1">욕실</option>
+                        <option value="2">주방</option>
+                        <option value="3">장판</option>
+                        <option value="4">벽지</option>
+                    </select>
+
+
+                    <div id="search">
+                        <input type="text" id="in_txt" placeholder="검색어를 입력하세요.">
+                        <i class="fas fa-search" title="검색하기"></i>
+                        <!-- <button id="ok_btn">검색</button> -->
+                    </div>
+
+
+                    <!-- filter -->
+                </div>
+
+
+
+                <div class="item1">
+
+                    <img src="../images/submain_1.PNG" id="img1" class="img">
+                    <div class="info">
+                        <div id="business_name" class="name">JS Glass</div>
+                        <button id="reg" class="btn">상담 신청하기</button>
+                        <div class="detail">내집을 믿고 맡겨주신 만큼 신뢰를 바탕으로 더 꼼꼼한 시공으로 보답하고자 항상 노력하고 있습니다.</div>
+                        <i class="fas fa-star"> 4.7</i>
+                        <span class="review">리뷰 334개</span>
+
+                        <img src="../images/people.png" id="review_img" class="re_img">
+                        <div id="review_txt" class="re_txt">첫 상담부터 대면한 상담까지 친절하시고 여러가지 자료를 보여주셔서 믿음이 갔습니다. <br>
+                            다음에도 이용할게요 감사합니다~!</div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+
+
+
+                <div class="item1">
+
+                    <img src="../images/submain_2.PNG" id="img2" class="img">
+                    <div class="info">
+                        <div id="business_name1" class="name">JS Glass</div>
+                        <button id="reg1" class="btn">상담 신청하기</button>
+                        <div class="detail">내집을 믿고 맡겨주신 만큼 신뢰를 바탕으로 더 꼼꼼한 시공으로 보답하고자 항상 노력하고 있습니다.</div>
+                        <i class="fas fa-star"> 4.7</i>
+                        <span class="review">리뷰 334개</span>
+
+                        <img src="../images/people.png" id="review_img1" class="re_img">
+                        <div id="review_txt1" class="re_txt">첫 상담부터 대면한 상담까지 친절하시고 여러가지 자료를 보여주셔서 믿음이 갔습니다. <br>
+                            다음에도 이용할게요 감사합니다~!</div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+
+
+                <div class="item1">
+
+                    <img src="../images/submain_3.PNG" id="img3" class="img">
+                    <div class="info">
+                        <div id="business_name3" class="name">JS Glass</div>
+                        <button id="reg3" class="btn">상담 신청하기</button>
+                        <div class="detail">내집을 믿고 맡겨주신 만큼 신뢰를 바탕으로 더 꼼꼼한 시공으로 보답하고자 항상 노력하고 있습니다.</div>
+                        <i class="fas fa-star"> 4.7</i>
+                        <span class="review">리뷰 334개</span>
+
+                        <img src="../images/people.png" id="review_img3" class="re_img">
+                        <div id="review_txt3" class="re_txt">첫 상담부터 대면한 상담까지 친절하시고 여러가지 자료를 보여주셔서 믿음이 갔습니다. <br>
+                            다음에도 이용할게요 감사합니다~!</div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+
+
+                <div class="item1">
+
+                    <img src="../images/submain_4.PNG" id="img4" class="img">
+                    <div class="info">
+                        <div id="business_name4" class="name">JS Glass</div>
+                        <button id="reg4" class="btn">상담 신청하기</button>
+                        <div class="detail">내집을 믿고 맡겨주신 만큼 신뢰를 바탕으로 더 꼼꼼한 시공으로 보답하고자 항상 노력하고 있습니다.</div>
+                        <i class="fas fa-star"> 4.7</i>
+                        <span class="review">리뷰 334개</span>
+
+                        <img src="../images/people.png" id="review_img4" class="re_img">
+                        <div id="review_txt4" class="re_txt">첫 상담부터 대면한 상담까지 친절하시고 여러가지 자료를 보여주셔서 믿음이 갔습니다. <br>
+                            다음에도 이용할게요 감사합니다~!</div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+
+
+                <div class="item1">
+
+                    <img src="../images/submain_5.PNG" id="img5" class="img">
+                    <div class="info">
+                        <div id="business_name5" class="name">JS Glass</div>
+                        <button id="reg5" class="btn">상담 신청하기</button>
+                        <div class="detail">내집을 믿고 맡겨주신 만큼 신뢰를 바탕으로 더 꼼꼼한 시공으로 보답하고자 항상 노력하고 있습니다.</div>
+                        <i class="fas fa-star"> 4.7</i>
+                        <span class="review">리뷰 334개</span>
+
+                        <img src="../images/people.png" id="review_img5" class="re_img">
+                        <div id="review_txt5" class="re_txt">첫 상담부터 대면한 상담까지 친절하시고 여러가지 자료를 보여주셔서 믿음이 갔습니다. <br>
+                            다음에도 이용할게요 감사합니다~!</div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+
+
+
+                <div id="paging">
+                    <div class="left_btn pbtn">이전</div>
+                    <ul>
+                        <li class="view_page">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+    
+                    </ul>
+                    <div class="right_btn pbtn">다음</div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+  <!-- 찬우 작업 영역 -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+
+                    <ul>
+                        <li>이용약관</li>
+                        <li>|</li>
+                        <li>매물등록서비스 이용약관</li>
+                        <li>|</li>
+                        <li>개인정보처리방침</li>
+                        <li>|</li>
+                        <li>매물관리규정</li>
+                        <li>|</li>
+                        <li>업체 제휴 등록</li>
+                    </ul>
+                    <input class="top_btn" type="button" value="top">
+                    <input class="bottom_input" type="text">
+                    <div class="bottom_search">
+                    <input class="bottom_guide" type="text"
+                    value="매물번호검색:"
+                    disabled>
+                        
+
+                    </div>
+
+                </div>
+
+              
+                <div class="footer_bottom">
+                    <pre>
+(주)스테이션3
+
+대표 : 백지현  
+
+사업자 번호: 110-52-123543 통신판매업신고번호 : 제2020-서울 강남-03633호
+
+주소 : 서울 강남구 역삼동 735 한독빌딩 8층 쌍용교육센터
+
+고객센터 : 02-1234-5678(평일 07:00 ~ 20:30 토•일요일, 공휴일 휴무)
+
+팩스 : 02-973-6634  프로모션/사업 제휴문의:ssang@station.co.kr  허위매물 신고:yong@dabangapp.com
+
+                    </pre>
+    <table class="tbl1">
+        <tr>
+            <td>               
+            <input type="button" value="자주묻는 질문">
+            <input type="button" value="1:1 문의">
+            </td>
+            <td class="sns" rowspan="2">
+                <button type="button">
+                <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" >
+                    <i class="fas fa-sms"></i></button>
+                <button type="button" >
+                    <i class="fab fa-whatsapp"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="right">Station3, Inc. All rights reserved.</td>
+        </tr>
+    </table>
+    
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+        <!-- 방찾기 아이콘 -->
+        <!-- <span id= "fix_btn">
+            <i class="fas fa-search" > 방 찾기</i>
+        </span> -->
+
+
+    </div>
+    
+</body>
+</html>

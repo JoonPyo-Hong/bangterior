@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>non_advice</title>
+    <link rel="stylesheet" type="text/css" href="../css/main_member.css">
+    <!-- 구글웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <style>
+
+        #main {
+            border: 1px solid #F0F0F6;
+            width: 1200px;
+            height: 2000px;
+            margin: auto auto;
+            background-color: #F0F0F6;
+            margin-top: 50px;
+        }
+
+
+        .support {
+            border: 7px solid #2E364A;
+            border-radius: 100px;
+            width: 90px;
+            height: 90px;
+            /* margin-top: 50px;
+            margin-left: 200px; */
+            float: left;
+        }
+
+
+        #content1 {
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 25px;
+            width: 700px;
+            height: 90px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        #txt1 {
+            /* border: 1px solid black; */
+            width: 600px;
+            margin: auto auto;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+
+
+
+        #item1 {
+            /* border: 1px solid black; */
+            width: 900px;
+            height: 110px;
+            margin: auto auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        
+        #item2 {
+            /* border: 1px solid black; */
+            width: 900px;
+            height: 250px;
+            margin: auto auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+
+        #content2 {
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 25px;
+            width: 700px;
+            height: 200px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+
+        #txt2 {
+            /* border: 1px solid black; */
+            width: 600px;
+            margin: auto auto;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+
+        #content2::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+        #content3 {
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 25px;
+            width: 700px;
+            height: 1500px;
+            margin: auto auto;
+            margin-left: 275px;
+        }
+
+
+        #product_info  {
+            /* border: 1px solid black; */
+            width: 600px;
+            margin: auto auto;
+            margin-top: 40px;
+        }
+
+        #prod_img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            float: left;
+        }
+
+
+        #prod_name {
+            /* border: 1px solid black; */
+            width: 400px;
+            float: left;
+            margin-top: 40px;
+            margin-left: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+
+        #type  {
+            /* border: 1px solid black; */
+            width: 300px; 
+            float: left;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            /* color: #7674E2; */
+        }
+
+        .s {
+            color: #7674E2;
+        }
+
+        #product_info::after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        #room_info::after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+
+
+        hr {
+            border: 1px solid #ccc;
+            width: 600px;
+            margin: auto auto;
+            margin-top: 50px;
+        }
+
+
+
+
+        #region , #info_name , #info_tel , #info_date , #area{
+            /* border: 1px solid black; */
+            width: 600px;
+            margin: auto auto;
+            margin-top: 40px;
+        }
+
+        #reg_txt , #name_txt , #tel_txt , #date_txt , #area_txt{
+            /* border: 1px solid red; */
+            width: 400px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2E364A;
+        }
+
+        #sell {
+            border: 1 solid #999;
+            border-radius: 10px;
+            outline: none;
+            text-decoration: none;
+            width: 600px;
+            height: 40px;
+            font-size: 1em;
+        }
+
+
+        #input_name , #input_area {
+            border: 1px solid #999;
+            border-radius: 10px;
+            outline: none;
+            width: 590px;
+            height: 30px;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+
+        .tel , .date {
+            border: 1px solid #999;
+            border-radius: 10px;
+            outline: none;
+            width: 175px;
+            height: 30px;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+
+
+        #agree {
+            /* border: 1px solid black; */
+            width: 600px;
+            margin: auto auto;
+            margin-top: 200px;
+            font-size: 1.2em;
+        }
+
+        .agr {
+            /* border: 1px solid black; */
+            width: 400px;
+            margin-bottom: 10px;
+        }
+
+
+        #agree1 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+
+
+        #ok {
+            /* border: 1px solid black; */
+            width: 600px;
+            margin: auto auto;
+            margin-top: 50px;
+        }
+
+        #ok_btn {
+            border: 0;
+            width: 600px;
+            height: 50px;
+            cursor: pointer;
+            background-color: #7674E2;
+            color: white;
+            outline: none;
+        }
+
+
+        #ok_btn_txt {
+            font-size: 1.5em;
+        }
+
+
+
+
+
+
+
+
+
+        #footer {
+            margin-top: 50px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- 전체 -->
+    <div id="wrap">
+        
+        <!-- header -->
+        <div id="header">
+            
+            <div class="logo_area">
+                <img class="logo" src="../images/logo.png">
+                <p>찬방찬방</p>
+
+                <ul id="gnb">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+
+            
+
+
+
+            <!-- nav -->
+            <div id="nav">
+                <ul>
+                    <li><a href="#">매물 조회</a></li>
+                    <li><a href="#">매물 등록</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div id="container">
+            <!-- 작업 영역-->
+            <div id="main">
+
+                   <div id="item1">
+                        <img src="../images/support.png" class="support">
+                        <div id="content1">
+                            <div id="txt1">안녕하세요. 찬방찬방 상담 담당자 입니다. 😊</div>
+                        </div>
+                   </div>
+
+                   <div id="item2">
+                        <img src="../images/support.png" class="support">
+                        <div id="content2">
+                            <div id="txt2">고객님에게 연락드릴 수 있도록 <br> 필요한 내용을 입력해주세요. <br>상담에서 시공까지 고객님을 도와드리겠습니다 🙌</div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="content3">
+
+                        <!-- 선택 상품 정보 -->
+                        <div id="product_info">
+                            <img src="../images/submain_1.PNG" id="prod_img">
+                            <div id="prod_name">아이언 행거형 철제 드레스룸 시스템옷장</div>
+                            <div id="type">선택옵션: <span class="s"> A 시공업체</span></div>
+                        </div>
+                            <hr>
+
+                        <!-- 면적 입력 -->
+                        <div id="area">
+                            <div id="area_txt">상담받을 방의 면적을 입력해 주세요.</div>
+                            <input type="text" id="input_area">
+                        </div>
+
+
+                        <!-- 시공 지역 선택 -->
+                        <div id="region">
+                            <div id="reg_txt">시공할 지역을 선택해 주세요.</div>
+                            <select id="sell">
+                                <option value="1">서울특별시</option>
+                                <option value="2">부산광역시</option>
+                                <option value="3">대구광역시</option>
+                                <option value="4">인천광역시</option>
+                                <option value="5">광주광역시</option>
+                                <option value="6">대전광역시</option>
+                                <option value="7">강원도</option>
+                                <option value="8">경기도</option>
+                                <option value="9">경상남도</option>
+                                <option value="10">제주특별자치도</option>
+                            </select>
+                        </div>
+
+
+                        <!-- 이름 입력 -->
+                        <div id="info_name">
+                            <div id="name_txt">고객님의 이름을 입력해 주세요.</div>
+                            <input type="text" id="input_name" >
+                        </div>
+
+
+
+                        <!-- 전화번호 입력 -->
+                        <div id="info_tel">
+                            <div id="tel_txt">상담받을 전화번호를 입력해 주세요.</div>
+                            <input type="text" id="input_tel1" class="tel"> - 
+                            <input type="text" id="input_tel2" class="tel"> -
+                            <input type="text" id="input_tel3" class="tel">
+                        </div>
+
+
+                        <!-- 날짜 입력 -->
+                        <div id="info_date">
+                            <div id="date_txt">상담받을 날짜를 입력해 주세요.</div>
+                            <input type="text" id="input_date1" class="date"> / 
+                            <input type="text" id="input_date2" class="date"> /
+                            <input type="text" id="input_date3" class="date">
+                        </div>
+
+
+
+                        <!-- 동의약관 -->
+                        <div id="agree">
+                            <div id="agree1" class="agr">
+                            <input type="checkbox" id="cb1" class="cb">
+                                <label for="cb1">전체 동의하기</label>
+                            </div>
+
+                            <div id="agree2" class="agr">
+                            <input type="checkbox" id="cb2" class="cb">
+                                <label for="cb2">서비스 이용을 위한 제3자 정보제공 동의 (필수)</label>
+                            </div>
+
+                            <div id="agree3" class="agr">
+                            <input type="checkbox" id="cb3" class="cb">
+                                <label for="cb3">개인정보처리방침 동의 (필수)</label>
+                            </div>
+
+                            <div id="agree4" class="agr">
+                            <input type="checkbox" id="cb4" class="cb">
+                                <label for="cb4">이벤트 등 프로모션 알림 수신 동의 (선택)</label>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 확인버튼 -->
+                        <div id="ok">
+                            <button id="ok_btn"><span id="ok_btn_txt">완료</span></button>
+                        </div>
+
+                    
+
+                    
+
+
+                        <!-- content3 -->
+                    </div>
+                
+
+
+                <!-- main -->
+            </div>
+            
+            <!-- container -->
+        </div>
+
+
+  <!-- 찬우 작업 영역 -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+
+                    <ul>
+                        <li>이용약관</li>
+                        <li>|</li>
+                        <li>매물등록서비스 이용약관</li>
+                        <li>|</li>
+                        <li>개인정보처리방침</li>
+                        <li>|</li>
+                        <li>매물관리규정</li>
+                        <li>|</li>
+                        <li>업체 제휴 등록</li>
+                    </ul>
+                    <input class="top_btn" type="button" value="top">
+                    <input class="bottom_input" type="text">
+                    <div class="bottom_search">
+                    <input class="bottom_guide" type="text"
+                    value="매물번호검색:"
+                    disabled>
+                        
+
+                    </div>
+
+                </div>
+
+              
+                <div class="footer_bottom">
+                    <pre>
+(주)스테이션3
+
+대표 : 백지현  
+
+사업자 번호: 110-52-123543 통신판매업신고번호 : 제2020-서울 강남-03633호
+
+주소 : 서울 강남구 역삼동 735 한독빌딩 8층 쌍용교육센터
+
+고객센터 : 02-1234-5678(평일 07:00 ~ 20:30 토•일요일, 공휴일 휴무)
+
+팩스 : 02-973-6634  프로모션/사업 제휴문의:ssang@station.co.kr  허위매물 신고:yong@dabangapp.com
+
+                    </pre>
+    <table class="tbl1">
+        <tr>
+            <td>               
+            <input type="button" value="자주묻는 질문">
+            <input type="button" value="1:1 문의">
+            </td>
+            <td class="sns" rowspan="2">
+                <button type="button">
+                <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" >
+                    <i class="fas fa-sms"></i></button>
+                <button type="button" >
+                    <i class="fab fa-whatsapp"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="right">Station3, Inc. All rights reserved.</td>
+        </tr>
+    </table>
+    
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+        <!-- 방찾기 아이콘 -->
+        <!-- <span id= "fix_btn">
+            <i class="fas fa-search" > 방 찾기</i>
+        </span> -->
+
+
+    </div>
+    
+</body>
+</html>

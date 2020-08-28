@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+
+
+
+
+
+   #container .box{
+       height: 1400px;
+   }
+
+
+   #title {
+            /* border-bottom: 1px solid black; */
+            width: 1200px;
+            padding-top: 50px;
+            /* padding-left: 30px; */
+            font-size: 2.5em;
+            margin: auto 100px;
+        }
+
+
+
+        
+
+
+        .tbl {
+            width: 1200px;
+            /* height: 400px; */
+            margin: 50px auto;
+            border-top: 1px solid #e6e6e6;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .tbl th, .tbl td{
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        thead tr{
+            height:50px;
+            font-size: 16px;
+            color:#7674e2;
+            border-top:2px solid rgb(77, 77, 77);
+            border-bottom:1px solid rgb(77, 77, 77);
+        }
+
+        tbody tr{
+            height:40px;
+            color:#333;
+        }
+
+        tbody td:nth-child(2):hover{
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        tbody tr:last-child{
+            border-bottom:2px solid rgb(77, 77, 77);
+        }
+
+        thead tr th:nth-child(1){width: 150px;}
+        thead tr th:nth-child(2){width: 150px;}
+        thead tr th:nth-child(3){width: 150px;}
+        thead tr th:nth-child(4){width: 150px;}
+        thead tr th:nth-child(5){width: 150px;}
+
+        tbody tr td:nth-child(4){color:#888;}
+
+
+
+        /* 페이징 영역 */
+
+        #paging {
+            /* width: 800px; */
+            /* margin: 0 auto; */
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        #paging ul {
+            display: inline-block;
+            height: 30px;
+        }
+
+        #paging ul li{
+            cursor: pointer;
+            float: left;
+            font-size: 18px;
+            margin: 0 15px;
+            color:#666;
+            line-height: 40px;
+        }
+
+        #paging ul li.view_page{
+            font-weight: bold;
+            color:#333;
+            text-decoration:underline;
+        }
+
+        #paging .btn {
+            font-size: 14x;
+            cursor: pointer;
+            display: inline-block;
+            padding:7px 10px;
+            border:1px solid #888;
+            margin: 0 10px;
+        }
+
+        #paging .btn:hover {
+            transition: all 0.5s;
+            background-color: black;
+            color:white;
+        }
+
+
+
+        /* 검색창 영역 */
+
+        .search_area {
+            text-align: center;
+        }
+
+        #search_select {
+            font-size: 18px;
+            width: 130px;
+            height: 40px;
+            text-indent: 5px;
+        }
+
+        #search_word {
+            font-size: 18px;
+            width: 400px;
+            height: 40px;
+            border: none;
+            border-bottom: 1px solid #333;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-indent: 5px;
+        }
+
+        #search_btn {
+            width: 100px;
+            height: 40px;
+            border-radius: 1px;
+            background-color: #7674e2;
+            color:white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+        /* 차트 */
+        .chart_title {
+            /* border: 1px solid black; */
+            width: 180px;
+            font-size: 1.1em;
+            margin: 10px auto;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        #chart {
+            width: 700px;
+            height: 400px;
+            /* margin: 50px 30px; */
+        }
+
+
+        #cha1  {
+            /* border: 1px solid black; */
+            width: 700px;
+            margin-right: 50px;
+            float: left;
+        }
+
+        #cha2 {
+            /* border: 1px solid black; */
+            width: 400px;
+            float: left;
+        }
+
+        #cha {
+            /* border: 1px solid black; */
+            width: 1200px;
+            height: 480px;
+            margin: 50px 100px;
+            margin-bottom: 80px;
+        }
+
+
+
+        .highcharts-legend {
+            /* 위치 변경 */
+            /* 실패 */
+            transform: translate(50,50);
+        }
+
+
+
+        /* 셀렉트 */
+        #sel {
+            /* border: 1px solid black; */
+            width: 200px;
+            height: 30px;
+            font-size: 1.1em;
+            float: right;
+            margin-right: 100px;
+            margin-bottom: 20px;
+        }
+
+        #sel_txt {
+            float: left;
+            margin-right: 10px;
+        }
+
+        #sel1 {
+            width: 100px;
+        }
+
+

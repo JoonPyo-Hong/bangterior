@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>non_interior</title>
+    <link rel="stylesheet" type="text/css" href="../css/main_member.css">
+    <!-- 구글웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.js"></script>
+
+    <style>
+        #main {
+            /* border: 1px solid black; */
+            background-image: url("../images/sub_main.PNG");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -150px;
+            /* opacity: .5; */
+            width: 1200px;
+            height: 400px;
+            margin: auto auto;
+            margin-bottom: 50px;
+            text-align: center;
+            /* display: none; */
+        }
+
+
+
+
+        .main {
+            /* border: 1px solid black; */
+            border-radius: 30px;
+            width: 500px;
+            height: 200px;
+            float: left;
+            /* background-color: #F0F0F6; */
+            /* background-color: rgba(0, 0, 0, .6); */
+            background-color: rgba(240,240,246, .85);
+            cursor: pointer;
+            margin: 110px 30px;
+        }
+
+
+        .main:hover {
+            background-color: rgba(240,240,246, .95);
+            color: #2E364A;
+        }
+
+        #sub_main_1 {
+            /* border: 1px soild black; */
+            margin-left: 70px;
+        }
+
+        .op {
+            width: 1200px;
+            height: 400px;
+            margin: auto auto;
+            margin-bottom: 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, .2);
+        }
+
+
+        .sub_main_txt {
+            font-size: 2em;
+            line-height: 6;
+            font-weight: bold;
+            /* color: #2E364A; */
+            color: #5B6172;
+        }
+
+        .sub_main_txt:hover {
+            color: black;
+        }
+
+
+        .fa-list-alt, .fa-building{
+            font-size: 1.7em;
+            color: #2E364A;
+            margin-right: 10px;
+        }
+
+
+
+
+
+
+
+        /* #main_img {
+            width: 1200px;
+            height: 400px;
+        } */
+
+        #sub_main {
+            /* border: 1px solid black; */
+            width: 1200px;
+            height: 350px;
+            margin: auto auto;
+            background-color: #F0F0F6;
+            text-align: center;
+            margin-bottom: 50px;
+            display: none;
+            /* transition: transform 0.7s; */
+        }
+
+
+        .btn_img{
+            border: 5px solid white;
+            border-radius: 100px;
+            width: 170px;
+            height: 170px;
+            margin: 30px 20px;
+            float: left;
+            text-align: center;
+        }
+
+        
+
+        .btn_img:hover {
+            border: 5px solid #2E364A;
+        }
+
+        #btn0 {
+            margin-left: 70px;
+        }
+
+        .imgs {
+            border-radius: 100px;
+            width: 170px;
+            height: 170px;
+            cursor: pointer;
+        }
+
+        #img_txt {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+
+        .sub_txt {
+            /* border: 1px solid black; */
+            width: 100px;
+            margin-top: 20px;
+            margin-left: 35px;
+            background-color: rgba(91,97,114, .15);
+        }
+
+        #sub_main::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+
+        #content {
+            width: 1200px;
+            height: 300px;
+            margin: auto auto;
+            background-color: #F0F0F6;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #con_txt {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .key {
+            /* border: 1px solid black; */
+            border-radius: 25px;
+            width: 230px;
+            height: 80px;
+            background-image: url("../images/img6.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: white;
+            float: left;
+            padding-top: 40px;
+            margin: 30px 20px;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+
+        .key > div {
+            border-radius: 25px;
+            width: 230px;
+            height: 80px;
+            padding-top: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0,0,0, .2);
+        }
+
+        
+
+
+        #keyword1 {
+            margin-left: 70px;
+        }
+
+        .in_txt {
+            color: #EEE;
+            letter-spacing: 0.05em;
+        }
+
+        .t:hover {
+            color: white;
+            border-bottom: 3px solid white;
+            cursor: pointer;
+        }
+
+        .key > div:hover {
+            background-color: rgba(0,0,0, .05);
+        }
+
+
+        #content1 {
+            /* border: 1px solid black; */
+            width: 1200px;
+            height: 600px;
+            margin: auto auto;
+            text-align: center;
+            background-color: #F0F0F6;
+        }
+
+
+        .best {
+            /* border: 1px solid black; */
+            width: 350px;
+            height: 350px;
+            margin: 30px 10px;
+            /* margin-right: 20px; */
+            float: left;
+        }
+
+        #best1 {
+            margin-left: 15px;
+        }
+
+        .best_img {
+            /* border: 1px solid black; */
+            width: 330px;
+            height: 330px;
+            cursor: pointer;
+        }
+
+        #con_txt1 {
+            font-size: 1.4em;   
+            font-weight: bold;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fa-star {
+            color: #7674E2;
+        }
+
+        .type {
+            /* border: 1px solid black; */
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .best_txt {
+            /* border: 1px solid black; */
+            height: 30px;
+            text-align: center;
+            color: #2E364A;
+            margin-bottom: 10px;
+        }
+
+
+        .price {
+            /* border: 1px solid black; */
+            text-align: center;
+            color: #2E364A;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            /* border: 1px solid black; */
+            color: #5B6172;
+            font-size: 0.9em;
+        } 
+
+        
+        .direc {
+            /* border: 1px solid black; */
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin-top: 200px;
+            margin-left: 10px;
+            float: left;
+        }
+
+
+        #berner {
+            border: 1px solid black;
+            width: 1200px;
+            height: 130px;
+            margin: auto auto;
+            margin-bottom: 50px;
+            background-color: #2E364A;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+        #berner_txt {
+            font-size: 2.5em;
+            color: #F0F0F6;
+            margin-top: 30px;
+            width: 300px;
+            text-align: center;
+            float: left;
+            /* margin-left: 410px; */
+        }
+
+
+        #berner_txt:hover {
+            color: #ccc;
+            /* font-weight: bold; */
+        }
+
+        #more {
+            /* border: 1px solid black; */
+            width: 100px;
+            height: 25px;
+            background-color: #5B6172;
+            font-size: 0.9em;
+            color: white;
+            float: left;
+            margin-top: 58px;
+            cursor: pointer;
+            /* margin-left: 400px; */
+        } 
+
+
+        #more:hover {
+            background-color: #2E364A;
+        }
+
+
+        #sub_berner::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+        .fa-tools {
+            color: #F0F0F6;
+            font-size: 2.6em;
+            float: left;
+            margin-top: 40px;
+        }
+
+        #sub_berner {
+            /* border: 1px solid white; */
+            width: 450px;
+            clear: both;
+            text-align: center;
+            margin: auto auto;
+            cursor: pointer;
+        }
+
+        #sub_berner:hover {
+            color: white;
+        }
+
+
+
+
+
+
+        
+
+
+
+
+        #footer {
+            margin-top: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- 전체 -->
+    <div id="wrap">
+        
+        <!-- header -->
+        <div id="header">
+            
+            <div class="logo_area">
+                <img class="logo" src="../images/logo.png">
+                <p>찬방찬방</p>
+
+                <ul id="gnb">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+
+            
+
+
+
+            <!-- nav -->
+            <div id="nav">
+                <ul>
+                    <li><a href="#">매물 조회</a></li>
+                    <li><a href="#">매물 등록</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- container -->
+   
+        <div id="container">
+            <!-- 작업 영역 -->
+
+
+            <!-- <div id="main">
+                <img src="../images/main.jpg" id="main_img">
+            </div> -->
+            <!-- 메인 상단 이미지  -->
+            <div id="main">
+
+                
+                <!-- <div id="sub_main_1" class="main">
+                    <span id="sub_main_txt_1" class="sub_main_txt">시공 카테고리별 보러가기</span>
+                </div>
+                
+                <div id="sub_main_2" class="main">
+                    <div id="sub_main_txt_2" class="sub_main_txt">업체별 보러가기</div>
+                </div> -->
+
+
+
+                <div class="op">
+                    <div id="sub_main_1" class="main"><div class="sub_main_txt"><span class="sub_t"><i class="far fa-list-alt"></i>시공 카테고리별 보러가기</span></div></div>
+                    <div id="sub_main_2" class="main"><div class="sub_main_txt"><span class="sub_t"><i class="far fa-building"></i>업체별 보러가기</span></div></div>
+                </div>
+
+                <!-- main -->
+            </div>
+
+
+
+
+
+
+            <div id="sub_main">
+                <div id="img_txt">당신이 원하는 테마별 상품!</div>
+
+                <div id="btn0" class="btn_img">
+                    <img src="../images/img5.jpg" class="imgs" title="전체보기">
+                    <div id="sub_txt0" class="sub_txt">전체보기</div>
+                </div>
+
+                <div id="btn1" class="btn_img">
+                    <img src="../images/img1.png" class="imgs" title="욕실">
+                    <div id="sub_txt1" class="sub_txt">욕실</div>
+                </div>
+
+                <div id="btn2" class="btn_img">
+                    <img src="../images/img2.png" class="imgs" title="주방">
+                    <div id="sub_txt2" class="sub_txt">주방</div>
+                </div>
+
+                <div id="btn3" class="btn_img">
+                    <img src="../images/img3.png" class="imgs" title="마루 및 벽지">
+                    <div id="sub_txt3" class="sub_txt">마루 및 벽지</div>
+                </div>
+
+                <div id="btn4" class="btn_img">
+                    <img src="../images/img4.png" class="imgs" title="장판">
+                    <div id="sub_txt4" class="sub_txt">장판</div>
+                </div>
+            </div>
+
+
+
+
+            <div id="berner">
+                <div id="sub_berner">
+                    <i class="fas fa-tools"></i>
+                    <div id="berner_txt">업체 이신가요?</div>
+                    <div id="more">더 보러가기</div>
+                </div>
+            </div>
+
+
+
+            
+
+            <div id="content">
+                <div id="con_txt">금주의 인기 키워드</div>
+                <div id="keyword1" class="key"><div></div><div class="in_txt"><span class="t">#아늑한</span></div></div>
+                <div id="keyword2" class="key"><div></div><div class="in_txt"><span class="t">#편안한</span></div></div>
+                <div id="keyword3" class="key"><div></div><div class="in_txt"><span class="t">#쾌적한</span></div></div>
+                <div id="keyword4" class="key"><div></div><div class="in_txt"><span class="t">#차분한</span></div></div>
+            </div>
+
+
+
+            <div id="content1">
+
+                <div id="con_txt1">BEST</div>
+
+
+                    <img src="../images/back_img.png" id="back_img" class="direc">
+
+                <div id="best1" class="best">
+
+                    <img src="../images/best1.png" id="best1_img" class="best_img">
+                    <div id="info1" class="info">
+                        <div class="type">[마루 시공]</div> 
+                        <div class="best_txt">클라우드 60수광목 차렵이불(단품/세트) 2colors</div>
+                        <div class="price">43,900원</div>
+                        <i class="fas fa-star"> 4.7</i>
+                        <span class="review">리뷰 334개</span>
+                    </div>
+                </div>
+
+                <div id="best2" class="best">
+                    <img src="../images/best2.png" id="best2_img" class="best_img">
+                    <div id="info2" class="info">
+                        <div class="type">[벽지 시공]</div> 
+                        <div class="best_txt">아이언 행거형 철제 드레스룸 시스템옷장 4colors</div>
+                        <div class="price">74,900원</div>
+                        <i class="fas fa-star"> 3.4</i>
+                        <dspaniv class="review">리뷰 234개</span>
+                    </div>
+                </div>
+
+                <div id="best3" class="best">
+                    <img src="../images/best3.png" id="best3_img" class="best_img">
+                    <div id="info3" class="info">
+                        <div class="type">[주방 시공]</div> 
+                        <div class="best_txt">2200G 델리스SE 화이트/민트/그레이</div>
+                        <div class="price">120,369원</div>
+                        <i class="fas fa-star"> 3.7</i>
+                        <span class="review">리뷰 624개</span>
+                    </div>
+                </div>
+
+
+                <img src="../images/next_img.png" class="direc" id="back_img">
+
+            </div>
+
+
+            <!-- container -->
+        </div>
+
+
+
+
+        <!-- 전체 -->
+        </div>
+
+
+  <!-- 찬우 작업 영역 -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+
+                    <ul>
+                        <li>이용약관</li>
+                        <li>|</li>
+                        <li>매물등록서비스 이용약관</li>
+                        <li>|</li>
+                        <li>개인정보처리방침</li>
+                        <li>|</li>
+                        <li>매물관리규정</li>
+                        <li>|</li>
+                        <li>업체 제휴 등록</li>
+                    </ul>
+                    <input class="top_btn" type="button" value="top">
+                    <input class="bottom_input" type="text">
+                    <div class="bottom_search">
+                    <input class="bottom_guide" type="text"
+                    value="매물번호검색:"
+                    disabled>
+                        
+
+                    </div>
+
+                </div>
+
+              
+                <div class="footer_bottom">
+                    <pre>
+(주)스테이션3
+
+대표 : 백지현  
+
+사업자 번호: 110-52-123543 통신판매업신고번호 : 제2020-서울 강남-03633호
+
+주소 : 서울 강남구 역삼동 735 한독빌딩 8층 쌍용교육센터
+
+고객센터 : 02-1234-5678(평일 07:00 ~ 20:30 토•일요일, 공휴일 휴무)
+
+팩스 : 02-973-6634  프로모션/사업 제휴문의:ssang@station.co.kr  허위매물 신고:yong@dabangapp.com
+
+                    </pre>
+    <table class="tbl1">
+        <tr>
+            <td>               
+            <input type="button" value="자주묻는 질문">
+            <input type="button" value="1:1 문의">
+            </td>
+            <td class="sns" rowspan="2">
+                <button type="button">
+                <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" >
+                    <i class="fas fa-sms"></i></button>
+                <button type="button" >
+                    <i class="fab fa-whatsapp"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="right">Station3, Inc. All rights reserved.</td>
+        </tr>
+    </table>
+    
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+        <!-- 방찾기 아이콘 -->
+        <!-- <span id= "fix_btn">
+            <i class="fas fa-search" > 방 찾기</i>
+        </span> -->
+
+
+    </div>
+
+
+    
+</body>
+
+
+<script >
+    // var subMain1 = document.getElementsByClassName("sub_main_1");
+    // var subMain = document.getElementById("sub_main");
+
+    // 시공별 카테고리 보기 클릭 > 소메뉴 나옴.
+    // main.onclick = function(){
+    //     subMain.style["display"]="block";
+    //     subMain.style["transform"]="translate(0px,100px)";
+    // };
+
+    
+
+    $("#sub_main_1").click(function() {
+        // 시공 카테고리별 보러가기 클릭시
+        $("#sub_main").slideToggle();
+
+    });
+
+
+
+</script>
+
+
+
+</html>

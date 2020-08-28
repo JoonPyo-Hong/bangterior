@@ -1,0 +1,536 @@
+@charset "UTF-8";
+
+
+        #title {
+            /* border-bottom: 1px solid black; */
+            width: 1200px;
+            padding-top: 50px;
+            /* padding-left: 30px; */
+            font-size: 2.5em;
+            margin: auto 100px;
+            margin-bottom: 20px;
+        }
+
+        #sub_title {
+            width: 1200px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin: auto 100px;
+        }
+
+        #sub_box {
+            border: 1px solid #777;
+            width: 1200px;
+            height: 650px;
+            margin: auto auto;
+        }
+
+        #left {
+            border-right: 1px solid #999;
+            width: 200px;
+            height: 650px;
+            float: left;
+        }
+        
+        #right {
+            /* border: 1px solid blue; */
+            width: 996px;
+            height: 600px;
+            float: left;
+        }
+
+        #img1 {
+            border: 3px solid #888;
+            padding: 10px;
+            margin: 15px 10px;
+            width: 150px;
+            height:150px;
+        }
+
+        #info_id {
+            /* border: 1px solid black; */
+            width: 160px;
+            margin: auto auto;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
+        }
+        
+        /* 확인필요 */
+        /* #id_text:read-only{
+            width: 100px;
+            margin: auto auto;
+            border: 0px;
+            padding-left: 5px;
+            border: 0;
+           
+        } */
+
+        #id_text{
+            width: 100px;
+            margin: auto auto;
+            border: 0px;
+            padding-left: 5px;
+            border: 0;
+            font-size: 1em;
+           
+        }
+
+
+
+        .cb {
+            width: 160px;
+            margin: auto auto;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
+        }
+
+
+
+
+        #page_btn {
+            border: 1px solid white;
+            width: 230px;
+            margin: auto auto;
+            /* float: left; */
+        }
+
+        .page_btn:hover , .page_btn_sel:hover {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #7674E2;
+        }
+
+        .page_btn {
+            border: 1px solid white;
+            width: 30px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .page_btn:nth-child(2) {
+            /* 선택 되었을 때 배경색 주기 */
+            background-color: #F0F0F6;
+        }
+        
+        .page_btn_sel {
+	        border: 1px solid white;
+	        background-color: white;
+        	font-weight: bold;
+        	text-decoration: underline;
+        	width: 30px;
+        	font-size: 1.2em;
+        	cursor: pointer;
+        	
+        }
+
+        
+        #img2 {
+            /* border: 1px solid coral; */
+            /* margin: 40px 10px; */
+            margin-bottom: 10px;
+            width: 300px;
+            height: 300px;
+            /* float: left; */
+        }
+
+        #sub_right {
+            /* border: 1px solid blueviolet; */
+            width: 330px;
+            margin: 45px 10px;
+            float: left;
+            text-align: center;
+            margin-left: 15px;
+        }
+        
+        
+        #content {
+            border: 1px solid #888;
+            /* float: right; */
+            width: 600px;
+            height: 350px;
+            margin-top: 20px;
+            margin-right: 25px;
+            overflow: scroll;
+            overflow-x: hidden;
+            
+        }
+
+        #sub_content {
+            border: 1px solid #888;
+            width: 930px;
+            height: 150px;
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-right: 40px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        #btns {
+            width: 200px;
+            margin-left: 800px;
+        }
+
+        #reg_btn {
+            border: 0px;
+            width: 80px;
+            height: 30px;
+            margin-top: 12px;
+            cursor: pointer;
+            outline: none;
+            background-color: #7674E2;
+            color: white;
+        }
+
+        #del_btn {
+            border: 0px;
+            width: 80px;
+            height: 30px;
+            margin-top: 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            outline: none;
+            background-color: #7674E2;
+            color: white;
+        }
+
+        .info {
+            margin: 20px 10px;
+        }
+
+
+        #address > input[type=text]{
+            border: 0;
+            width: 320px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+        
+        #postal > input[type=text]{
+            border: 0;
+            width: 50px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #deposit > input[type=text]{
+            border: 0;
+            width: 130px;
+            margin-left:5px;
+            font-size: 1em;
+            
+        }
+
+        #rent > input[type=text]{
+            border: 0;
+            width: 100px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #structure > input[type=text]{
+            border: 0;
+            width: 100px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #cost > input[type=text]{
+            border: 0;
+            width: 100px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #room_area > input[type=text]{
+            border: 0;
+            width: 50px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #con_area > input[type=text]{
+            border: 0;
+            width: 50px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        /* 생각 필요 */
+        #room_option > input[type=text]{
+            border: 0;
+            width: 50px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #loan > input[type=text]{
+            border: 0;
+            width: 50px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+        #detail > input[type=text]{
+            border: 0;
+            width: 200px;
+            height: 50px;
+            margin-left:5px;
+            font-size: 1em;
+        }
+
+
+        #map_btn {
+            width: 60px;
+            height: 30px;
+        }
+
+        #que_img {
+            width: 20px;
+            height: 20px;
+        }
+
+        #que_btn {
+            border: 0;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        #add_title {
+            font-weight: bold;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .c {
+            padding: 5px;
+            width: 330px;
+            float: left;
+        }
+
+        #all_score_box {
+            /* border: 1px solid black; */
+            width: 700px;
+            margin: auto auto;
+        }
+
+        #all_score_box::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        .s {
+            background-color: #EFEFEF;
+            color: #2E364A;
+            font-weight: bold;
+            width: 80px;
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+
+
+        .s1 {
+            background-color: #EFEFEF;
+            color: #2E364A;
+            font-weight: bold;
+            width: 100px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+        
+        #address_txt {
+        	width: 300px;
+        }
+
+
+        .score {
+            background-color: #EFEFEF;
+            color: #2E364A;
+            font-weight: bold;
+            width: 50px;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .score_title {
+            background-color: #EFEFEF;
+            color: #2E364A;
+            font-weight: bold;
+            width: 100px;
+            display: inline-block;
+        }
+
+        #all_score  {
+            /* border: 1px solid black; */
+            width: 200px;
+            /* margin-left: 25px; */
+            float: left;
+            display: inline-block;
+        }
+
+        #avg_score {
+            /* border: 1px solid black; */
+            width: 200px;
+            display: inline-block;
+            /* margin-left: 25px; */
+            /* float: left; */
+        }
+
+        #score::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        #score {
+            /* border: 1px solid black; */
+            margin-left: 25px;
+            width: 400px;
+            height: 50px;
+            padding-top: 17px;
+            margin: auto auto;
+            /* margin-bottom: 20px; */
+        }
+
+        #research {
+            /* border: 1px solid black; */
+            width: 50px;
+            height: 50px;
+            margin-left: 200px;
+            float: left;
+        }
+        
+    
+        #detailcontent {
+        	width: 400px;
+        	margin-left: 5px;
+        	float: left;
+        }
+        
+        #detail_title {
+        	float: left;
+        }
+        
+        
+        /*
+        #detailcontent::after  {
+        	content: ' ';
+        	display: block;
+        	clear: both;
+        }
+        */
+
+        
+        
+
+        .swal2-popup swal2-modal swal2-icon-warning swal2-show {
+            /* width: 1000px !important; */
+            font-size: 1em !important;
+        }
+
+
+        body{
+                font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+            }
+            
+            
+            
+            
+            /* 시세보기 팝업 css */
+        .modal , #regview_modal , #regview_finpopup{
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1001; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        #regview_finpopup {
+            display: none;
+            z-index: 1002;
+            position: absolute;
+            left:50%; top:270%;
+            margin-left: -250px;
+            margin-top: -225px;
+            width: 700px;
+            height:660px;
+            background-color: white;
+            border:1px solid #eee;
+        }
+        
+        
+        .finpopup b, #seefin{
+        top:270%;
+        width: 700px;
+        height: 700px;
+        top: 250px;
+        }
+
+        .popup p{
+            text-align: center;
+            margin: 50px 0 30px 0;
+            color:#444;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+       
+
+      
+
+        .popup .ok_btn {
+            cursor: pointer;
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 30px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            background-color: #7674E2;
+            color:white;
+        }
+
+        .popup .sign_up {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 15px;
+            font-weight: normal;
+            color:#888;
+        }
+        .popup .sign_up span {
+            cursor: pointer;
+            color:#7674E2;
+            margin-left: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .popup .sign_up span:hover {
+            text-decoration: underline;
+        }
+
+        .popup .sign_up span:nth-child(1) {
+            margin-left: 0px;
+        }
+
+        #chart{
+          width: 600px;
+          margin-left: 40px;
+        }
+        
+
+

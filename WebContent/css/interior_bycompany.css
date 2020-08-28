@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+  #main {
+            border: 1px solid #F0F0F6;
+            width: 1200px;
+            height: 2500px;
+            background-color: #F0F0F6;
+            margin: auto auto;
+        }
+
+
+        #filter {
+            /* border: 1px solid black; */
+            width: 1000px;
+            height: 150px;
+            margin: auto auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #sel1 , #sel2{
+        	cursor : pointer;
+            border: 0;
+            outline: none;
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            margin-right: 40px;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+
+
+        #search {
+        	cursor : pointer;
+            border-radius: 5px;
+            width: 600px;
+            display: inline-block;
+            /* margin-left: 80px; */
+            padding: 5px 5px;
+        }
+
+
+        #in_txt {
+            height: 20px;
+            width: 500px;
+            margin-right: 10px;
+            font-size: 1.2em;
+            padding: 10px;
+            border: 0px solid #999;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .fa-search {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #7674E2;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+
+        .item1 {
+            /* border: 1px solid black; */
+            width:900px;
+            height: 320px;
+            background-color: white;
+            margin: auto auto;
+            margin-bottom: 30px;
+        }
+
+        .img {
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            width: 300px;
+            float: left;
+            margin: 30px;
+        }
+
+        .name {
+            /* border: 1px solid black; */
+            width: 200px;
+            font-size: 1.5em;
+            font-weight: bold;
+            float: left;
+            margin-top: 5px;
+        }
+
+
+
+        .detail {
+            /* border: 1px solid red; */
+            width: 450px;
+            height: 80px;
+            margin-top: 60px;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            /* border: 1px solid black; */
+            width: 480px;
+            height: 300px;
+            float: left;
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+
+        .btn {
+            border: 0;
+            outline: none;
+            width: 100px;
+            height: 30px;
+            float: left;
+            margin-left: 150px;
+            margin-top: 5px;
+            cursor: pointer;
+            background-color: #2E364A;
+            color: white;
+
+        }
+
+
+        .fa-star {
+            color: #7674E2;
+        }
+
+        .review {
+            /* border: 1px solid black; */
+            color: #5B6172;
+            font-size: 0.9em;
+        } 
+
+        .review::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+        .re_img {
+            width:70px;
+            display: block;
+            border: 5px solid #999;
+            border-radius: 50px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        .re_txt {
+            /* border: 1px solid black; */
+            width: 350px;
+            height: 80px;
+            float: left;
+            margin: 10px;
+            margin-top: 20px;
+            padding: 5px;
+            font-size: 0.9em;
+        }
+
+
+        /* 페이징 영역 */
+        #paging {
+            /* width: 800px; */
+            /* margin: 0 auto; */
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
+
+        #paging ul {
+            display: inline-block;
+            height: 30px;
+        }
+
+        #paging ul li{
+            cursor: pointer;
+            float: left;
+            font-size: 18px;
+            margin: 0 15px;
+            color:#666;
+            line-height: 40px;
+        }
+
+        #paging ul li.view_page{
+            font-weight: bold;
+            color:#333;
+            text-decoration:underline;
+        }
+
+        #paging .pbtn {
+            font-size: 14x;
+            cursor: pointer;
+            display: inline-block;
+            padding:7px 10px;
+            border:1px solid #888;
+            margin: 0 10px;
+        }
+
+        #paging .pbtn:hover {
+            transition: all 0.5s;
+            background-color: black;
+            color:white;
+        }
+
+
+
+
+
+
+
+        #footer {
+            margin-top: 50px;
+        }

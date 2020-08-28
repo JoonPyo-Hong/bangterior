@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submenu1_main</title>
+    <link rel="stylesheet" type="text/css" href="../css/main_member.css">
+    <!-- 구글웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    
+
+
+    <style>
+
+        #main_title {
+            border-bottom: 1px solid #999;
+            width: 1200px;
+            margin: auto auto;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 50px;
+            margin-top: 10px;
+        }
+
+        #content {
+            /* border: 1px solid #5B6172; */
+            width: 1200px;
+            height: 430px;
+            margin: auto auto;
+            background-color: #F0F0F6;
+        }
+
+
+
+        #sub_title {
+            /* border: 1px solid black; */
+            width: 250px;
+            font-size: 1.5em;
+        }
+
+        .fa-cart-plus {
+            font-size: 1.3em;
+            color: #EE5656;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #imgs {
+            /* border: 1px solid red; */
+            width: 1100px;
+            height: 370px;
+            /* margin-top: 5px; */
+            text-align: center;
+            /* margin-left: 50px; */
+            float: left;
+            /* padding-left: 10px; */
+        }
+
+
+        #imgs::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+
+
+
+        .new_img {
+            /* border: 1px solid #5B6172; */
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-right: 10px;
+        }        
+
+
+        .direc {
+            width: 30px;
+            cursor: pointer;
+            margin-top: 120px;
+            /* margin-left: 40px; */
+            float: left;
+        }
+
+        #back_img {
+            margin-left: 15px;
+        }
+
+        #con_txt1 {
+            font-size: 1.4em;   
+            font-weight: bold;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fa-star {
+            color: #7674E2;
+        }
+
+
+        .best_txt {
+            /* border: 1px solid black; */
+            height: 30px;
+            text-align: center;
+            color: #2E364A;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .type {
+            /* border: 1px solid black; */
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #7674E2;
+        }
+
+
+        .price {
+            /* border: 1px solid black; */
+            text-align: center;
+            color: #2E364A;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            /* border: 1px solid black; */
+            color: #5B6172;
+            font-size: 0.9em;
+        } 
+
+
+        .info {
+            /* border: 1px solid black; */
+            width: 250px;
+            margin: auto auto;
+            margin-top: 10px;
+        }
+
+        .new {
+            /* border: 1px solid black; */
+            width: 250px;
+            float: left;
+            margin-left: 18px;
+        }
+
+        .best_txt:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+
+        #content2 {
+            /* border: 1px solid red; */
+            width: 1200px;
+            height: 1800px;
+            margin: auto auto;
+            background-color: #F0F0F6;
+            margin-top: 50px;
+        }
+
+        #price_btn {
+            border: 0;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            text-decoration: none;
+            background-color: #ccc;
+            color: #2E364A;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        #option {
+            /* border: 1px solid black; */
+            /* margin-top: 50px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 60px;
+            padding-top: 50px;
+        }
+
+        #business_type {
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            margin-left: 10px;
+            text-decoration: none;
+            border: 0;
+            /* background-color: #7674E2; */
+            background-color: #ccc;
+            color: #2E364A;
+            /* color: white; */
+            font-size: 1.1em;
+        }
+
+        #search {
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            width: 570px;
+            display: inline-block;
+            margin-left: 80px;
+            /* background-color: #2E364A; */
+            /* background-color: #7674E2; */
+            /* text-align: center; */
+            padding: 5px 5px;
+        }
+
+        #in_txt {
+            height: 30px;
+            width: 500px;
+            margin-right: 10px;
+            font-size: 1.2em;
+            padding: 5px;
+            border: 1px solid #999;
+        }
+
+        .fa-search {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #2E364A;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        #ok_btn {
+            border: 0;
+            height: 30px;
+            width: 100px;
+            margin-left: 10px;
+            text-decoration: none;
+            background-color: #F0F0F6;
+            color: #2E364A;
+            cursor: pointer;
+        }
+
+
+        #sort_sel {
+            width: 130px;
+            height: 40px;
+            border-radius: 5px;
+            margin-left: 130px;
+            text-decoration: none;
+            outline: none;
+            border: 0;
+            background-color: #ccc;
+            /* background-color: #7674E2; */
+            color: #2E364A;
+            font-size: 1.1em;
+        }
+
+        #total_count {
+            /* border: 1px solid black; */
+            margin-top: 20px;
+            color: #5B6172;
+            margin-left: 5px;
+        }
+
+        #img_list {
+            /* border: 1px solid black; */
+            width: 1100px;
+            height: 1500px;
+            margin: auto auto;
+            margin-top: 10px;
+        }
+
+
+
+        .item_img {
+            border-radius: 10px;
+            width: 330px;
+            height: 330px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+
+
+        .item {
+            /* border: 1px solid black; */
+            width: 330px;
+            float: left;
+            text-align: center;
+            margin-left: 27px;
+            margin-top: 20px;
+        }
+
+
+
+
+        #paging {
+            /* width: 800px; */
+            /* margin: 0 auto; */
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        #paging ul {
+            display: inline-block;
+            height: 30px;
+        }
+
+        #paging ul li{
+            cursor: pointer;
+            float: left;
+            font-size: 18px;
+            margin: 0 15px;
+            color:#666;
+            line-height: 40px;
+        }
+
+        #paging ul li.view_page{
+            font-weight: bold;
+            color:#333;
+            text-decoration:underline;
+        }
+
+        #paging .btn {
+            font-size: 14x;
+            cursor: pointer;
+            display: inline-block;
+            padding:7px 10px;
+            border:1px solid #888;
+            margin: 0 10px;
+        }
+
+        #paging .btn:hover {
+            transition: all 0.5s;
+            background-color: black;
+            color:white;
+        }
+
+        #paging::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+
+
+
+
+
+
+        
+        #footer {
+            margin-top: 100px;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <!-- 전체 -->
+    <div id="wrap">
+        
+        <!-- header -->
+        <div id="header">
+            
+            <div class="logo_area">
+                <img class="logo" src="../images/logo.png">
+                <p>찬방찬방</p>
+
+                <ul id="gnb">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+
+            
+
+
+
+            <!-- nav -->
+            <div id="nav">
+                <ul>
+                    <li><a href="#">매물 조회</a></li>
+                    <li><a href="#">매물 등록</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div id="container">
+            <!-- 작업 부분 -->
+
+            <div id="main_title">욕실</div>
+
+            <div id="content">
+                <div id="sub_title"><i class="fas fa-cart-plus"></i>새로 들어온 상품</div>
+
+
+                <img src="../images/back_img.png" id="back_img" class="direc">
+
+                <div id="imgs">
+                    
+                    <div id="new1" class="new">
+                        <img src="../images/submain_1.PNG" id="img1" class="new_img">
+                        <div id="info1" class="info">
+                            <div class="type">[NEW]</div> 
+                            <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                            <div class="price">43,900원</div>
+                            <!-- <i class="fas fa-star"> 4.7</i>
+                            <span class="review">리뷰 334개</span> -->
+                        </div>
+                    </div>
+
+                    <div id="new2" class="new">
+                        <img src="../images/submain_2.PNG" id="img2" class="new_img">
+                        <div id="info1" class="info">
+                            <div class="type">[NEW]</div> 
+                            <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                            <div class="price">43,900원</div>
+                            <!-- <i class="fas fa-star"> 4.7</i>
+                            <span class="review">리뷰 334개</span> -->
+                        </div>
+                    </div>
+
+                    <div id="new3" class="new">
+                        <img src="../images/submain_3.PNG" id="img3" class="new_img">
+                        <div id="info1" class="info">
+                            <div class="type">[NEW]</div> 
+                            <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                            <div class="price">43,900원</div>
+                            <!-- <i class="fas fa-star"> 4.7</i>
+                            <span class="review">리뷰 334개</span> -->
+                        </div>
+                    </div>
+
+                    <div id="new4" class="new">
+                        <img src="../images/submain_4.PNG" id="img4" class="new_img">
+                        <div id="info1" class="info">
+                            <div class="type">[NEW]</div> 
+                            <div class="best_txt">거실 와이드 슬라이딩 장식장</div>
+                            <div class="price">43,900원</div>
+                            <!-- <i class="fas fa-star"> 4.7</i>
+                            <span class="review">리뷰 334개</span> -->
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <img src="../images/next_img.png" class="direc" id="next_img">
+            </div>
+
+            
+            <div id="content2">
+
+                <div id="option">
+                    <!-- <select id="price_sel" name="가격">
+                        <option value="최소">최소</option>
+                        <option value="최대">최대</option>
+                    </select> -->
+
+                    <button id="price_btn">가격</button>
+
+                    <select id="business_type">
+                        <option value="1">A업체</option>
+                        <option value="2">B업체</option>
+                        <option value="3">C업체</option>
+                        <option value="4">D업체</option>
+                        <option value="5">E업체</option>
+                    </select>
+
+                    <div id="search">
+                        <input type="text" id="in_txt">
+                        <i class="fas fa-search" title="검색하기"></i>
+                        <!-- <button id="ok_btn">검색</button> -->
+                    </div>
+
+
+                    <select id="sort_sel">
+                        <option value="1">인기순</option>
+                        <option value="2">판매순</option>
+                        <option value="3">낮은 가격순</option>
+                        <option value="4">높은 가격순</option>
+                    </select>
+
+
+
+                    <div id="total_count">전체 126</div>
+
+
+
+                    <div id="img_list">
+
+                        <div id="item1" class="item">
+                            <img src="../images/submain_1.PNG" id="img1" class="item_img">
+                            <div id="info1" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+    
+                        <div id="item2" class="item">
+                            <img src="../images/submain_2.PNG" id="img2" class="item_img">
+                            <div id="info2" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+    
+                        <div id="item3" class="item">
+                            <img src="../images/submain_3.PNG" id="img3" class="item_img">
+                            <div id="info3" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+
+                        <div id="item4" class="item">
+                            <img src="../images/submain_1.PNG" id="img1" class="item_img">
+                            <div id="info4" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+    
+                        <div id="item5" class="item">
+                            <img src="../images/submain_2.PNG" id="img2" class="item_img">
+                            <div id="info5" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+    
+                        <div id="item6" class="item">
+                            <img src="../images/submain_3.PNG" id="img3" class="item_img">
+                            <div id="info6" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+
+                        <div id="item7" class="item">
+                            <img src="../images/submain_1.PNG" id="img1" class="item_img">
+                            <div id="info7" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+    
+                        <div id="item8" class="item">
+                            <img src="../images/submain_2.PNG" id="img2" class="item_img">
+                            <div id="info8" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+    
+                        <div id="item9" class="item">
+                            <img src="../images/submain_3.PNG" id="img3" class="item_img">
+                            <div id="info9" class="info">
+                                <!-- <div class="type">[NEW]</div>  -->
+                                <div class="best_txt">클라우드 60수광목 차렵이불</div>
+                                <div class="price">43,900원</div>
+                                <i class="fas fa-star"> 4.7</i>
+                                <span class="review">리뷰 334개</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                        <div id="paging">
+                            <div class="left_btn btn">이전</div>
+                            <ul>
+                                <li class="view_page">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+            
+                            </ul>
+                            <div class="right_btn btn">다음</div>
+                        </div>
+
+                        
+
+
+                    <!-- content2 -->
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+  <!-- 찬우 작업 영역 -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+
+                    <ul>
+                        <li>이용약관</li>
+                        <li>|</li>
+                        <li>매물등록서비스 이용약관</li>
+                        <li>|</li>
+                        <li>개인정보처리방침</li>
+                        <li>|</li>
+                        <li>매물관리규정</li>
+                        <li>|</li>
+                        <li>업체 제휴 등록</li>
+                    </ul>
+                    <input class="top_btn" type="button" value="top">
+                    <input class="bottom_input" type="text">
+                    <div class="bottom_search">
+                    <input class="bottom_guide" type="text"
+                    value="매물번호검색:"
+                    disabled>
+                        
+
+                    </div>
+
+                </div>
+
+              
+                <div class="footer_bottom">
+                    <pre>
+(주)스테이션3
+
+대표 : 백지현  
+
+사업자 번호: 110-52-123543 통신판매업신고번호 : 제2020-서울 강남-03633호
+
+주소 : 서울 강남구 역삼동 735 한독빌딩 8층 쌍용교육센터
+
+고객센터 : 02-1234-5678(평일 07:00 ~ 20:30 토•일요일, 공휴일 휴무)
+
+팩스 : 02-973-6634  프로모션/사업 제휴문의:ssang@station.co.kr  허위매물 신고:yong@dabangapp.com
+
+                    </pre>
+    <table class="tbl1">
+        <tr>
+            <td>               
+            <input type="button" value="자주묻는 질문">
+            <input type="button" value="1:1 문의">
+            </td>
+            <td class="sns" rowspan="2">
+                <button type="button">
+                <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" >
+                    <i class="fas fa-sms"></i></button>
+                <button type="button" >
+                    <i class="fab fa-whatsapp"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="right">Station3, Inc. All rights reserved.</td>
+        </tr>
+    </table>
+    
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+        <!-- 방찾기 아이콘 -->
+        <!-- <span id= "fix_btn">
+            <i class="fas fa-search" > 방 찾기</i>
+        </span> -->
+
+
+    </div>
+    
+</body>
+</html>

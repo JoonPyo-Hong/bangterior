@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* 리뷰 팝업창 */
+      
+		 .modal {
+        	display: none;
+            position: fixed; 
+            z-index: 1001; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4);
+        }
+        #esti_star {
+        	margin-top : -50px;
+        }
+        .review_popup {
+        	display: none;
+            z-index: 1002;
+            position: absolute;
+            width: 750px;
+            padding-left: 50px;
+            height: 950px;
+            background-color: white;
+            border: 1px solid #eee;
+        }
+
+        .review_popup .close_btn img {
+            cursor: pointer;
+            position: absolute;
+            width: 15px;
+            right: 30px;
+            top: 25px
+        }
+
+        #write_review {
+            text-align: center;
+            font-size: 1.4em;
+            margin-bottom: 30px;
+        }
+
+        .review_popup p {
+            margin-top: 50px;
+            color: #444;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .review_popup .rowsub {
+            margin-top: 50px;
+            color: #444;
+            font-size: 0.8em;
+        }
+
+        .review_popup .middlesub {
+            margin-top: 50px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        .review_popup>div {
+            width: 1100px;
+            
+        }
+		#productInfo {
+			margin-top : -20px;
+		}	
+        #productInfo>div {
+            float: left;
+        }
+
+        #productInfo>div:nth-child(2) {
+            width: 400px;
+            margin-top: 80px;
+            margin-left: 30px;
+            height: 100px;
+        }
+
+
+        #productInfo img {
+            width: 150px;
+            height: 150px;
+        }
+
+        #productInfo::after {
+            clear: both;
+            display: block;
+            content: "";
+        }
+
+        .star {
+            margin-top: 10px;
+        }
+
+        .fa {
+            cursor: pointer;
+            font-size: 2.5em;
+            color: #C6C6F3;
+        }
+
+        .checked {
+            color: #7674E2;
+        }
+        
+        #upimg div {
+            cursor: pointer;
+            text-align: center;
+            width: 700px;
+            padding : 10px;
+            margin-top: 30px;
+            height: 30px;
+            font-size: 16px;
+            background-color:  #C6C6F3;
+            color: white;
+        }
+        #write {
+        	margin-top : -10px;
+        }
+        #write textarea {
+            width: 700px;
+            margin-top: 20px;
+            padding : 10px;
+            height: 80px;
+            color : #aaa;
+        }
+        
+	
+
+
+
+
+        .review_popup .ok_btn {
+            cursor: pointer;
+            text-align: center;
+            width: 700px;
+            padding : 10px;
+            margin-top: 30px;
+            height: 30px;
+            font-size: 16px;
+            background-color: #7674E2;
+            color: white;
+        }

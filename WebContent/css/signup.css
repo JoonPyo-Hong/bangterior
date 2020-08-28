@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+
+        .modalSignup {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1001; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4);
+        }
+        #signup_popup {
+            display: none;
+            z-index: 1002;
+            position: absolute;
+            left:50%; top:50%;
+            margin-left: -250px;
+            margin-top: -400px;
+            width: 500px;
+            height: 870px;
+            background-color: white;
+            border:1px solid #eee;
+        }
+
+        #signup_popup .close_btn img{
+            cursor: pointer;
+            position: absolute;
+            width: 15px;
+            right: 30px;
+            top:25px
+
+        }
+
+        #signup_popup p{
+            text-align: center;
+            margin: 50px 0 20px 0;
+            color:#444;
+            font-size: 26px;
+            font-weight: bold;
+            
+        }
+
+        /* 회원가입 단계표시 */
+        #signup_popup .sign_num_box {
+            /* margin-top: -40px; */
+            width: 180px; height: 40px;
+            margin: 0 auto;
+            /* background-color: yellow; */
+        }
+        #signup_popup .sign_num_box ul {
+            text-align: center;
+        }
+        #signup_popup .sign_num_box ul li{
+            float: left;
+            margin-left: 20px;
+        }
+        #signup_popup .sign_num_box ul li:first-child{
+            margin-right: 10px;
+        }
+        #signup_popup .sign_num_box ul li:last-child{
+            margin-left: 10px;
+        }
+        #signup_popup .sign_num_box ul .line {
+            margin-left: 5px;
+        }
+
+
+        #signup_popup .sign_list p {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #888;
+            margin: 0px 0px 10px 30px;
+        }
+
+        #signup_popup .sign_chcek{
+            width: 90px;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        
+        #signup_popup div {
+            margin-bottom: 15px;
+        }
+
+        #signup_popup .radio_list {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        #signup_popup .radio_list .radio_btn {
+            margin-left: 20px;
+        }
+
+        #signup_popup .checkbox_list {
+            display: inline-block;
+            width: 200px;
+        }
+
+
+		#signup_popup .sign_input{
+            width: 320px;
+            height: 30px;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            text-indent: 10px;
+        }
+
+        #signup_popup .id_input {
+            width: 225px;
+        }
+
+        #signup_popup .sign_input:focus{
+            border: 1px solid #7674E2;
+        }
+
+        #signup_popup .sign_list .address_btn {
+            cursor: pointer;
+            width:60px; height:30px;
+            border: 1px solid #ccc;
+        }
+
+        #signup_popup .sign_list .id_btn {
+            cursor: pointer;
+            width:90px; height:30px;
+            border: 1px solid #ccc;
+        }
+		
+		 /* 패스워드 확인 배경이미지 */
+        #signup_popup .password_check {
+            background-image: url(../images/check_gray.png);
+            background-repeat: no-repeat;
+            background-position-x: 295px;
+            background-position-y: 6px;
+        }
+
+        /* 이메일 주소 선택 */
+        #selectEmail {
+            width:100px;
+            height:31px;
+            margin-right:10px;
+            border: 1px solid #ccc;
+        }
+		
+        #signup_popup .ok_btn {
+            cursor: pointer;
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 30px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            background-color: #7674E2;
+            color:white;
+        }

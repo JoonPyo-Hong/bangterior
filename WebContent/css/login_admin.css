@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+  body{
+            background-color: #2E364A;
+        }
+
+        #login_area {
+            position: absolute;
+            left:50%;top:50%;
+            margin-left:-200px;
+            margin-top:-150px;
+            width: 400px;
+            height:300px;
+            /* border: 1px solid red; */
+        }
+
+        #login_area .logo {
+            color:white;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        #login_area .login_input {
+            border: 1px solid #333F4F;
+            display: block;
+            width: 320px;
+            height:50px;
+            margin: 0px auto;
+            margin-bottom: 10px;
+            background-color: #293041;
+            background-image: url("/bangterior/images/id.png");
+            background-repeat: no-repeat;
+            background-position: 13px 16px;
+            text-indent:50px;
+            color: #59697e;
+            font-size: 15px;
+        }
+
+        #login_area #password_input {
+            background-image: url("/bangterior/images/pw.png");
+        }
+
+        #login_area #login_btn {
+            cursor: pointer;
+            text-align: center;
+            width: 320px;
+            margin: 0 auto;
+            margin-top: 30px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            /* background-color: #44B4C3; */
+            /* background-color: #FCBD2E; */
+            background-color: #3CBA99;
+            /* background-color: #EE5656; */
+            color:white;
+        }
+
+        #login_area .copyright {
+            font-size: 0.9em;
+            color: #59697e;
+            text-align: center;
+            font-size: 0.5em;
+            margin-top: 10px;
+        }

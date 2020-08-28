@@ -1,0 +1,523 @@
+#main {
+	/* border: 1px solid black; */
+	margin-left: 200px;
+	width: calc(100% - 400px);
+	height: 4150px;
+	position: relative;
+	/* padding: 20px; */
+}
+
+#left {
+	width: 30%;
+	border: 1px solid #dddddd;
+	/* height: 500px; */
+	position: sticky;
+	top: 180px;
+	padding: 20px;
+	float: left;
+}
+
+#left table {
+	margin-top: 20px;
+}
+
+#left td {
+	width: 100%;
+}
+
+.title1 {
+	opacity: 0.7;
+}
+
+.title2 {
+	font-size: 2em;
+	font-family: bold;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dddddd;
+}
+
+#left table tr:first-child td:nth-child(2) {
+	border-bottom: 1px solid #dddddd;
+}
+
+.heart:hover {
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#btn1 {
+	padding: 5px;
+	font-size: 18px;
+	height: 40px;
+}
+
+#btn1img {
+	width: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+	/* border: 1px solid black; */
+}
+
+.title2 button span {
+	/* text-align: center; */
+	/* vertical-align: center; */
+	/* margin: 0 auto; */
+	/* margin: 20px; */
+	/* border: 1px solid black; */
+	/* font-size: 1.7em; */
+	/* vertical-align: middle; */
+	
+}
+
+#title3 {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+#txt1 {
+	opacity: 0.7;
+}
+
+#leftimg {
+	width: 100px;
+	position: relative;
+	top: -200px;
+	left: 320px;
+}
+
+#left div:nth-child(7) {
+	text-align: center;
+	/* margin: 20px 0px; */
+}
+
+#left div:nth-child(6) {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+#left div:nth-child(6) button {
+	margin-left : -10px;
+	width: 450px;
+	padding: 20px 0px;
+	font-size: 1.5em;
+	border: 0px;
+	color: white;
+	background-color: #7674e2;
+	position: relative;
+	top: 80px;
+}
+
+#singo:hover {
+	cursor: pointer;
+}
+
+#singo {
+	text-align: right;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	/* font-size: 30px; */
+}
+
+#singo span {
+	/* padding: 15px; */
+	/* vertical-align: middle;
+                border: 1px solid black; */
+	vertical-align: text-top;
+}
+
+#singoimg {
+	width: 30px;
+}
+
+#right {
+	/* border: 1px solid black; */
+	width: 65%;
+	height: calc(100% - 1507px);
+	/* position: absolute; */
+	float: right;
+}
+
+
+
+#mamulnum {
+	border-radius: 10px;
+	width: 30%;
+	text-align: center;
+	padding: 20px 0px;
+	font-size: 1.7em;
+	color: white;
+	background-color: gray;
+}
+
+
+
+#btn2:hover {
+	cursor: pointer;
+}
+
+#btn2 span:last-child img {
+	/* text-align: right; */
+	float: right;
+
+	/* border: 1px solid black; */
+}
+
+#part2 {
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	margin: 0px auto;
+	width: 90%;
+	/* margin-top: 100px; */
+}
+
+#part2 td {
+	width: 200px;
+	/* border: 1px solid black; */
+	padding: 20px 0px;
+	font-size: 1.4em;
+}
+
+#part2 table tr td:nth-child(2), #part2 table tr td:nth-child(5) {
+	font-family: bold;
+}
+
+#part2 table tr td:nth-child(1), #part2 table tr td:nth-child(4) {
+	opacity: 0.7;
+}
+
+#part3 {
+	/* border-top: 1px solid #dddddd; */
+	border-bottom: 1px solid #dddddd;
+	margin: 0px auto;
+	width: 90%;
+	/* margin-top: 100px; */
+}
+
+.righttitle {
+	text-align: center;
+	font-size: 2em;
+	padding: 40px;
+}
+
+#txt2 {
+	margin-bottom: 10px;
+	color: #7674e2;
+	font-size: 1.5em;
+}
+
+#singotxt {
+	position: relative;
+	padding: 5px;
+	top: -3px;
+}
+
+/* 맵 */
+#map {
+	width: 1025px;
+	height: 525px;
+}
+
+#mapbox {
+	padding: 15px;
+}
+
+#mapimg:hover {
+	cursor: pointer;
+}
+
+#mapimg {
+	text-align: center;
+}
+
+#mapimg img {
+	width: 50px;
+	margin: 50px;
+}
+
+#score {
+	text-align: center;
+	font-size: 2em;
+	vertical-align: middle;
+	text-align: center center;
+}
+
+#score img {
+	width: 40px;
+	vertical-align: middle;
+	position: relative;
+	top: -6px;
+}
+
+#spider {
+	margin: 30px;
+	height: 700px;
+}
+/* 문의하기 팝업창 */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1001; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup {
+	display: none;
+	z-index: 1002;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -425px;
+	width: 500px;
+	height: 850px;
+	background-color: white;
+	border: 1px solid #eee;
+}
+
+.popup .close_btn img {
+	cursor: pointer;
+	position: absolute;
+	width: 15px;
+	right: 30px;
+	top: 25px
+}
+
+.popup p {
+	text-align: center;
+	margin: 50px 0 20px 0;
+	color: #444;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.popup .sign_list p {
+	display: inline-block;
+	width: 100px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #888;
+	margin: 0px 0px 10px 30px;
+}
+
+.popup .sign_input {
+	width: 320px;
+	height: 30px;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.popup .id_input {
+	width: 225px;
+}
+
+.popup .sign_input:focus {
+	border: 1px solid #7674E2;
+}
+
+.popup .ok_btn {
+	cursor: pointer;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	background-color: #7674E2;
+	color: white;
+}
+
+/* 집 판매자 정보 */
+.info_box {
+	width: 450px;
+	margin: 0 auto;
+}
+
+.popup  .info_box p {
+	font-size: 14px;
+	color: #888;
+	font-weight: normal;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.popup  .info_box .title {
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+}
+
+.popup  .info_box img {
+	width: 70px;
+	margin-left: 40%;
+	margin-top: 1 0px;
+}
+
+.popup .user_info p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+}
+
+.popup .user_info p span {
+	font-size: 14px;
+	color: #888;
+	font-weight: normal;
+}
+
+.popup .user_info p .phone {
+	color: #7674E2;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+        /* 문의하기 팝업창 */
+        .modal2 {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1001; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4);
+            }
+            .popup2 {
+                display: none;
+                z-index: 1002;
+                position: fixed;
+                left:50%; top:50%;
+                margin-left: -250px;
+                margin-top: -290px;
+                width: 500px;
+                height: 580px;
+                background-color: white;
+                border:1px solid #eee;
+            }
+
+            .popup2 .close_btn2 img{
+                cursor: pointer;
+                position: absolute;
+                width: 15px;
+                right: 30px;
+                top:25px
+
+            }
+
+            .popup2 p{
+                text-align: center;
+                margin: 50px 0 20px 0;
+                color:#444;
+                font-size: 26px;
+                font-weight: bold;
+                
+            }
+
+            .popup2 .sign_list2 p {
+                display: inline-block;
+                width: 100px;
+                text-align: left;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 30px;
+                color: #888;
+                margin: 0px 0px 10px 30px;
+            }
+
+            .popup2 .sign_input2{
+                width: 320px;
+                height: 30px;
+                font-size: 16px;
+                margin: 0 auto;
+                margin-top: 10px;
+                border: 1px solid #ccc;
+                text-align: left;
+                text-indent: 10px;
+            }
+
+            .popup2 .id_input2 {
+                width: 225px;
+            }
+
+            .popup2 .sign_input2:focus{
+                border: 1px solid #7674E2;
+            }
+
+            .popup2 .ok_btn2 {
+                cursor: pointer;
+                text-align: center;
+                width: 400px;
+                margin: 0 auto;
+                margin-top: 30px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 16px;
+                background-color: #7674E2;
+                color:white;
+            }
+
+
+            /* 집 판매자 정보 */
+            .info_box2 {
+                width: 450px;
+                margin: 0 auto;
+            }
+            .popup2  .info_box2 p {
+                font-size: 14px;
+                color:#888;
+                font-weight: normal;
+                text-align: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .popup2  .info_box2 .title {
+                font-size: 18px;
+                color:#333;
+                font-weight: bold;
+            }
+            .popup2  .info_box2 img {
+                width: 70px;
+                margin-left: 40%;
+                margin-top: 1 0px;
+            }
+            .popup2 .user_info p {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                color:#333;
+                font-weight: bold;
+                text-align: center;
+            }
+            .popup2 .user_info p span{
+                font-size: 14px;
+                color:#888;
+                font-weight: normal;
+            }
+
+            .popup2 .user_info p .phone{
+                color:#7674E2;
+                font-size: 22px;
+                font-weight: bold;
+            }

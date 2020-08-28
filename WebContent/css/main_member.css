@@ -40,7 +40,8 @@ ul,li {
 img.logo {
     position: absolute;
     margin-left: 25px;
-    height: 60px;
+    margin-top : 10px;
+    
 }
 
 .logo_area p{
@@ -48,7 +49,10 @@ img.logo {
     font-weight: bold;
     color:#7674E2;
     margin-left: 100px;
-    padding-top: 22px;
+    padding-top: 15px;
+    font-size : 2.0em; 
+    font-variant : small-caps;
+    margin-bottom : 10px;
 }
 
 #gnb {
@@ -72,11 +76,12 @@ img.logo {
     border-bottom: 1px solid rgb(235, 235, 235);
 }
 
-#nav ul {
+#nav>ul {
     margin-left: 25px;
+    
 }
 
-#nav ul li {
+#nav>ul>li {
     float:left;
     font-weight: bold;
     font-size: 16px;
@@ -84,7 +89,69 @@ img.logo {
     line-height: 60px;
 }
 
+/* 드롭다운 메뉴 */
+/* 인테리어 */
+#interior {
+	position : fixed;
+	left : 300px;
+	top : 130px;
+	
+	text-align : center;
+	cursor : pointer;
+	opacity : 0;
+	transition: all 0.15s ease-in;
+	
+	background-color : white;
+	border:1px solid rgb(235, 235, 235);
+	margin-top:1px;
+	width : 160px;
+	font-size:14px;
+	margin-left:-3px;
+	box-shadow: 5px 5px 10px #ededed;
+}
+#interior li{
+	margin-bottom : 5px;
+	line-height : 30px;
+	font-weight: normal;
+	font-size : 1.1em;
+	margin-top:15px;
+	margin-bottom:15px;
+}
 
+#interior li a:hover{
+	color:#7674E2;
+}
+
+/* 고객서비스 */
+#member_service {
+	position : fixed;
+	left : 500px;
+	top : 130px;
+	text-align : center;
+	cursor : pointer;
+	opacity : 0;
+	transition: all 0.15s ease-in;
+	
+	background-color : white;
+	border:1px solid rgb(235, 235, 235);
+	margin-top:1px;
+	width : 160px;
+	font-size:14px;
+	margin-left:-30px; 
+	box-shadow: 5px 5px 10px #ededed;
+}
+#member_service li{
+	margin-bottom : 5px;
+	line-height : 30px;
+	font-weight: normal;
+	font-size : 1.1em;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#member_service li a:hover{
+	color:#7674E2;
+}
 
 
 /* container */

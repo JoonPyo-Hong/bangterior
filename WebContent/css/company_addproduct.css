@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+#container {
+	/* border : 1px solid black; */
+	width: 1200px;
+	height: 2000px;
+	margin: 0px auto;
+	position: relative;
+	/* background-color: #f0f0f6; */
+}
+
+#container>p {
+	width: 900px;
+	text-align: center;
+	margin: 20px auto;
+	font-size: 2.0em;
+	font-weight: bold;
+}
+
+#interior_thumb {
+	/* border : 1px solid red; */
+	width: 1200px;
+	height: 700px;
+	position : relative;
+	overflow : hidden;
+}
+
+#interior_thumb>div {
+	width: 900px;
+	margin: 0px auto;
+	padding: 10px 0px;
+}
+
+/* 인테리어 상단 첫번째 이미지 */
+#interior_thumb>div:nth-child(1) label {
+	display: inline-block;
+	width: 900px;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("../images/photo.png");
+	border-radius: 2%;
+	background-position-x: center;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#interior_thumb>div:nth-child(1) label>span {
+	color: black;
+	font-size: 1.4em;
+	font-weight: bold;
+	position: absolute;
+	left: 500px;
+	top: 190px;
+	z-index: 1;
+}
+
+#interior_thumb>div:nth-child(1)>input {
+	display: none;
+}
+
+#thumb_title {
+	width: 900px;
+}
+
+/* 인테리어 상단 설명 */
+#interior_thumb>div:nth-child(2) {
+	/* border : 1px solid #999; */
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 인테리어 정보 테이블 */
+#interior_info table {
+	width: 900px;
+	height: 120px;
+	text-align: center;
+	border-collapse: collapse;
+	border: 2px solid #efefef;
+	padding-bottom: 0px;
+}
+
+#interior_info td {
+	border-right: 2px solid #efefef;
+	width: 200px;
+	height: 20px;
+	font-size: 0.9em;
+}
+
+#interior_info td:nth-last-child() {
+	border-right: 0px;
+}
+
+#interior_info table img {
+	width: 30px;
+	height: 30px;
+}
+
+#interior_info table tr:first-child {
+	font-weight: bold;
+}
+
+#interior_thumb input {
+	border: 0px solid #999;
+	margin-left: 10px;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	color: #999;
+	background-color: #f0f0f6;
+	text-align: center;
+}
+
+
+#interior_thumb .addlist {
+	width: 160px;
+	height: 20px;
+	padding: 10px;
+	font-size: 15px;
+	margin: 0px auto;
+	color: #999;
+	border-radius: 10px;
+	background-color: #f0f0f6;
+	text-align: center;
+	cursor : pointer;
+}
+#interior_thumb .list_check input, #interior_thumb .list_check label{
+	cursor : pointer;
+}
+/* 범위 선택 */
+#interior_thumb #ser_list_check{
+	/* border : 0.4px solid #999; */
+	display : none;
+	width: 160px;
+	height : 100px;
+	padding : 10px;
+	font-size : 15px;
+	position : absolute;
+	left : 412px;
+	top : 651px;
+	background-color: #f0f0f6;
+	opacity : 1;
+	z-index : 50;
+	border-radius : 4px;
+}
+/* 테마 선택 */
+#interior_thumb #theme_list_check{
+	/* border : 0.4px solid #999; */
+	display : none;
+	width: 160px;
+	height : 260px;
+	padding : 10px;
+	font-size : 15px;
+	position : absolute;
+	left : 632px;
+	top : 651px;
+	background-color: #f0f0f6;
+	opacity : 1;
+	z-index : 50;
+	border-radius : 4px;
+}
+
+/* 색상 선택 */
+#interior_thumb #color_list_check{
+	/* border : 0.4px solid #999; */
+	display : none;
+	width: 160px;
+	height : 400px;
+	padding : 10px;
+	font-size : 15px;
+	position : absolute;
+	left : 850px;
+	top : 651px;
+	background-color: #f0f0f6;
+	opacity : 1;
+	z-index : 50;
+	border-radius : 4px;
+}
+#interior_thumb #color_list_check input, #interior_thumb #color_list_check label{
+	cursor : pointer;
+}
+/* 인테리어 견적 상담 */
+#interior_esti {
+	/* border : 1px solid blue; */
+	width: 900px;
+	height: 100px;
+	margin: 0px auto;
+}
+
+#interior_esti>div {
+	/* border : 1px solid red; */
+	width: 250px;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+	float: left;
+}
+
+.apply_esti {
+	padding-top: 10px;
+	text-align: center;
+	background-color: #f0f0f6;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	color: #999;
+}
+
+#interior_company {
+	font-size: 0.9em;
+	margin-left: 114px;
+	text-align: right;
+	color: #5B6172;
+}
+
+/* 인테리어 사진(자세히) 상품정보 */
+#interior_details {
+	width: 900px;
+	height: 900px;
+	margin: 0px auto;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: 50px;
+	border-bottom: 2px solid #f0f0f6;
+	overflow: hidden;
+}
+
+#interior_details label {
+	display: inline-block;
+	width: 900px;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("../images/photo.png");
+	border-radius: 2%;
+	background-position-x: center;
+	opacity: 0.5;
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+}
+
+#interior_details input {
+	display: none;
+}
+
+#interior_details label>span {
+	color: black;
+	position: absolute;
+	left: 320px;
+	top: 200px;
+}
+
+#interior_details>p {
+	margin-bottom: 50px;
+}
+
+.item_button {
+	float: right;
+	margin-top: 50px;
+	margin-right: 10px;
+	width: 100px;
+	height: 25px;
+	font-size: 0.8em;
+	font-weight: bold;
+	background-color: #7674E2;
+	border-radius: 50px;
+	color: #F0F0F6;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}

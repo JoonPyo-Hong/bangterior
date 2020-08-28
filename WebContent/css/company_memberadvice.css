@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+#main {
+	border: 1px solid transparent;
+	width: 1200px;
+	height: 2000px;
+	margin: auto auto;
+	background-color: #F0F0F6;
+	margin-top: 50px;
+}
+
+.support {
+	border: 7px solid #2E364A;
+	border-radius: 100px;
+	width: 90px;
+	height: 90px;
+	/* margin-top: 50px;
+            margin-left: 200px; */
+	float: left;
+}
+
+#content1 {
+	border: 1px solid #ccc;
+	background-color: white;
+	border-radius: 25px;
+	width: 700px;
+	height: 90px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+#txt1 {
+	/* border: 1px solid black; */
+	width: 600px;
+	margin: auto auto;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+#item1 {
+	/* border: 1px solid black; */
+	width: 900px;
+	height: 110px;
+	margin: auto auto;
+	text-align: center;
+	margin-top: 50px;
+	display: none;
+}
+
+#item2 {
+	/* border: 1px solid black; */
+	width: 900px;
+	height: 250px;
+	margin: auto auto;
+	text-align: center;
+	margin-top: 50px;
+	display: none;
+}
+
+#content2 {
+	border: 1px solid #ccc;
+	background-color: white;
+	border-radius: 25px;
+	width: 700px;
+	height: 200px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+#txt2 {
+	/* border: 1px solid black; */
+	width: 600px;
+	margin: auto auto;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+#content2::after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+#content3 {
+	border: 1px solid #ccc;
+	background-color: white;
+	border-radius: 25px;
+	width: 700px;
+	height: 1500px;
+	margin: auto auto;
+	margin-left: 275px;
+	display: none;
+}
+
+#product_info, #room_info {
+	/* border: 1px solid black; */
+	width: 600px;
+	margin: auto auto;
+	margin-top: 40px;
+}
+
+#prod_img, #room_img {
+	width: 150px;
+	height: 150px;
+	border-radius: 15px;
+	float: left;
+}
+
+#prod_name {
+	/* border: 1px solid black; */
+	width: 400px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#room_name {
+	width: 400px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#type, #room_num, #room_area, #room_space {
+	/* border: 1px solid black; */
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	/* color: #7674E2; */
+}
+
+.s {
+	color: #7674E2;
+}
+
+#product_info::after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+#room_info::after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+hr {
+	border: 1px solid #ccc;
+	width: 600px;
+	margin: auto auto;
+	margin-top: 50px;
+}
+
+#region, #info_name, #info_tel, #info_date {
+	/* border: 1px solid black; */
+	width: 600px;
+	margin: auto auto;
+	margin-top: 40px;
+}
+
+#reg_txt, #name_txt, #tel_txt, #date_txt {
+	/* border: 1px solid red; */
+	width: 400px;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #2E364A;
+}
+
+#sell {
+	border: 1 solid #999;
+	border-radius: 10px;
+	outline: none;
+	text-decoration: none;
+	width: 600px;
+	height: 40px;
+	font-size: 1em;
+}
+
+#input_name {
+	border: 1px solid #999;
+	border-radius: 10px;
+	outline: none;
+	width: 590px;
+	height: 30px;
+	padding: 5px;
+	font-size: 1em;
+}
+
+.tel, .date {
+	border: 1px solid #999;
+	border-radius: 10px;
+	outline: none;
+	width: 175px;
+	height: 30px;
+	padding: 5px;
+	font-size: 1em;
+}
+#testDatepicker {
+	width: 380px
+}
+
+
+#agree {
+	/* border: 1px solid black; */
+	width: 600px;
+	margin: auto auto;
+	margin-top: 200px;
+	font-size: 1.2em;
+}
+
+.agr {
+	/* border: 1px solid black; */
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+#agree1 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#ok {
+	/* border: 1px solid black; */
+	width: 600px;
+	margin: auto auto;
+	margin-top: 50px;
+}
+
+#ok_btn {
+	border: 0;
+	width: 600px;
+	height: 50px;
+	cursor: pointer;
+	background-color: #7674E2;
+	color: white;
+	outline: none;
+}
+.cb {
+	width: 20px;
+	height : 20px;
+}
+#ok_btn_txt {
+	font-size: 1.5em;
+}
